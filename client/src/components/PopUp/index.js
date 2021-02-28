@@ -32,7 +32,7 @@ const PopUp = () => {
  
     return (
       <div id="modalDesign">
-        <button id="questionButton" style={{width: "200px"}} onClick={openModal}>Keep in Touch</button>
+        <button id="questionButton" style={{width: "200px", height: "65px"}} onClick={openModal}>Keep in Touch</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
