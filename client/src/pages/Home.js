@@ -33,14 +33,14 @@ const Home = () => {
     PublicMessages()
   }, [])
   return (
-   <>
+   <div id="home">
   <LearnMore />
   
             {/* <MessageInput messageCount={messageCount}/>
             <Suspense fallback="Loading">
             <PublicMessage messageState={messageState}/>
             </Suspense>           */}
-   </>
+   </div>
   )
 }
 

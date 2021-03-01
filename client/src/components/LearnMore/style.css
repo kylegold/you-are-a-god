@@ -2,7 +2,7 @@
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #learnMore {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(247,231,229);
   display: flex;
@@ -27,6 +27,12 @@ a:hover {
   color: #487796
 }
 
+#socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 @media only screen and (max-width: 1024px) {
   #headTitle, #seeInfo {
