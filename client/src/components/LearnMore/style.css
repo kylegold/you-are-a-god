@@ -6,7 +6,7 @@
   width: 100%;
   background-color: rgb(247,231,229);
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   line-height: 1.5;
