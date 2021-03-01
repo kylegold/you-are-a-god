@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from 'react-modal'
 import "./style.css"
 import MessageInput from "../MessageInput"
+import "./subscribes.scss"
 
 // const customStyles = {
 //   content : {
@@ -32,7 +33,7 @@ const PopUp = () => {
  
     return (
       <div id="modalDesign">
-        <button id="questionButton" style={{width: "200px", height: "65px"}} onClick={openModal}>Keep in Touch</button>
+        <button class="subscribe-button" style={{width: "200px", height: "65px"}} onClick={openModal}>Keep in Touch</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
