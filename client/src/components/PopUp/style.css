@@ -18,7 +18,12 @@
   background-color: rgba(72,168,238, 1);
   color: white;
   transition: ease-in .3s;
+
+  }
+#questionButton:focus { 
+  outline:none 
 }
+
 
 #modalTitle {
   text-align: center;
