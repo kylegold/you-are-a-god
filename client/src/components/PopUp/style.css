@@ -41,6 +41,7 @@
 
 #closeModal {
   margin: 0 auto;
+  text-align: center;
   width: 20px;
   height: 20px;
 }
