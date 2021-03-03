@@ -31,20 +31,6 @@ const MessageInput = (props) => {
       setPublicMessage('');
 }
 
-  const handlePublicMessageInput = (e) => {
-    e.preventDefault()
-    const value = e.target.value
-    console.log(value)
-    setPublicMessage(value)
-  }
-
-  const handlePublicUserName = (e) => {
-    e.preventDefault()
-    const value = e.target.value
-    const name = e.target.name
-    console.log(value, name)
-    setPublicName(value)
-  }
   const handlePublicUserEmail= (e) => {
     e.preventDefault()
     const value = e.target.value
@@ -54,18 +40,14 @@ const MessageInput = (props) => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
-    const value = e.target.value
-    const name = e.target.name
-    if (publicName && publicMessage){
-    axios.post('/message/messages', {name: publicName, email: publicEmail, message: publicMessage}).then(res => {
-      console.log(res);
-      console.log(res.data);
+    if (publicEmail){
+    axios.post('/message/messages', {email: publicEmail}).then(res => {
       e.target.reset();
       clearState()
       window.location.reload();
     })}
     else {
-      console.log("need a name and message")
+      console.log("need email")
     }
     
   }
@@ -74,11 +56,13 @@ const MessageInput = (props) => {
     <>
     <form onSubmit={handleSubmit}>
        
-       <div id="inputDiv"><input name="publicName" onChange={handlePublicUserName} placeholder="Name"/> <br />
+       <div id="inputDiv">
+         {/* <input name="publicName" onChange={handlePublicUserName} placeholder="Name"/> <br /> */}
        <input name="hiddenEmail" onChange={handlePublicUserEmail} placeholder="Email"/>
-       <textarea name="publicMessage" onChange={handlePublicMessageInput} placeholder="Ask a question or leave a comment..." onFocus={(e) => e.target.placeholder = ""} onBlur={(e) => e.target.placeholder = "Enter a comment..."}/>
+       {/* <textarea name="publicMessage" onChange={handlePublicMessageInput} placeholder="Ask a question or leave a comment..." onFocus={(e) => e.target.placeholder = ""} onBlur={(e) => e.target.placeholder = "Enter a comment..."}/> */}
+       {/* <br /> */}
+       </div> 
        <br />
-       </div> <br />
        <div id="submitQuestion"><button class="questionButton" type="submit" >Submit</button></div>
     </form>
   </>

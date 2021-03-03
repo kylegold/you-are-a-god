@@ -15,6 +15,12 @@
 #headTitle {
   margin-top: 30px;
 }
+#headTitle h1{
+  font-size: 80px;
+}
+#headTitle h2{
+  font-size: 35px;
+}
 #seeInfo {
   margin-bottom: 30px;
 }

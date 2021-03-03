@@ -6,7 +6,8 @@ const LearnMore = () => {
   return (
     <div id="learnMore">
     <div id="headTitle">
-    <h1>SOLO EXHIBITION OF GASPAR ROSIELSTONE, PLANNED FOR 2021.</h1>
+      <h1>YOU ARE A GOD</h1>
+    <h2>SOLO EXHIBITION OF GASPAR ROSIELSTONE</h2>
     </div>
     <PopUp/>
     {/* <button id="contactMe">
