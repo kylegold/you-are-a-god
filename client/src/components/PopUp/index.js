@@ -46,7 +46,7 @@ const PopUp = () => {
           <button id="closeModal" onClick={closeModal}>X</button>
           </div>
           <div id="modalBox">
-          <h2 id="modalTitle" ref={_subtitle => (subtitle = _subtitle)}>Want be updated with the happening of this exhibition? Sign up to be informed.</h2>
+          <h2 id="modalTitle" ref={_subtitle => (subtitle = _subtitle)}>Want to be updated with the happening of this exhibition? Sign up to be informed.</h2>
           < MessageInput />
           </div>
           
